@@ -1,0 +1,1 @@
+**NOTE:** Due to license issues we can not upload the real LIWC dictionaty file (`LIWC2007_English131104.dic`), we have only uploaded an empty file with the same name as a placeholder. Download the original one and replace this empty file with it.

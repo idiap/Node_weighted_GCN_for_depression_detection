@@ -1,0 +1,6 @@
+name: gcndepression
+dependencies:
+  - python=3.9
+  - pytorch::pytorch=2.0.1
+  - pytorch::pytorch-cuda=11.8
+  - nvidia::cuda=11.8
