@@ -643,6 +643,7 @@ def train_inductgcn(learning_rate, num_steps, save_model=False):
         if PATH_TEST:
             print("==================   Evaluation (test set)  ============================")
             print("Test set")
+            model.Conv_0_Test = None
             evaluate(model, X_test, y_test, labels, show_result=True)
 
         if SAVE_MODEL_AS_FINAL:
