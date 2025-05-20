@@ -98,3 +98,26 @@ This repo also contains the original optuna sqlite database files (`db_baselines
 ```bash
 $ optuna-dashboard sqlite:///db_inductgcn.sqlite3
 ```
+
+---
+## :page_facing_up: Citation
+
+If you found the paper and/or this repository useful, please consider citing our work: :blush::+1:
+
+```bibtex
+@inproceedings{burdisso23_interspeech,
+  title     = {Node-weighted Graph Convolutional Network for Depression Detection in Transcribed Clinical Interviews},
+  author    = {Sergio Burdisso and Esaú Villatoro-Tello and Srikanth Madikeri and Petr Motlicek},
+  year      = {2023},
+  booktitle = {Interspeech 2023},
+  pages     = {3617--3621},
+  doi       = {10.21437/Interspeech.2023-1923},
+  issn      = {2958-1796},
+}
+```
+
+## :ticket: License
+
+Copyright (c) 2025 [Idiap Research Institute](https://www.idiap.ch/).
+
+Apache-2.0 License.
