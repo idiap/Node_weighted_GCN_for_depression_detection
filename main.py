@@ -657,7 +657,13 @@ def train_inductgcn(learning_rate, num_steps, save_model=False):
 
 if __name__ == "__main__":
 
-    if args.task_id < 0:
+    if os.getenv('SGE_TASK_ID') is not None:  # SGE
+        task_ix = int(os.getenv('SGE_TASK_ID')) - 1
+        print(f"(JOB with index {task_ix} will run task {id})")
+    elif os.getenv('SLURM_ARRAY_TASK_ID') is not None:  # Slurm
+        task_ix = int(os.getenv('SLURM_ARRAY_TASK_ID')) - int(os.getenv('SLURM_ARRAY_TASK_MIN'))
+        print(f"(JOB with index {task_ix} will run task {id})")
+    elif args.task_id < 0:
         print(f"\nThere's a total of {OPTIONS_N} task options. List by task id:")
         for ix, op in enumerate(OPTIONS):
             print(f"  {ix + 1}.", get_task_info(op, only_description=True))
@@ -668,9 +674,6 @@ if __name__ == "__main__":
             task_ix = args.task_id - 1
         else:
             raise ValueError(f"argument --task-id must be a valid task id (i.e. integer between 1 and {OPTIONS_N})")
-    elif os.getenv('SGE_TASK_ID') is not None:
-        task_ix = int(os.getenv('SGE_TASK_ID')) - 1
-        print(f"(JOB with index {task_ix} will run task {id})")
     else:
         print("(No task id was provided, using the first one as default)")
         task_ix = 0
