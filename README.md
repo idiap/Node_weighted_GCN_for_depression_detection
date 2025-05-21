@@ -6,6 +6,7 @@
 
 ###### Paper accepted at [INTERSPEECH 2023 Conference](https://interspeech2023.org/) ([ARXIV Version](https://arxiv.org/abs/2307.00920)).
 
+_(you may be also interested in [our more recent the work](https://github.com/idiap/bias_in_daic-woz) published at NAACL 2024)_
 
 ## Abstract
 
@@ -113,6 +114,24 @@ If you found the paper and/or this repository useful, please consider citing our
   pages     = {3617--3621},
   doi       = {10.21437/Interspeech.2023-1923},
   issn      = {2958-1796},
+}
+
+@inproceedings{burdisso-etal-2024-daic,
+    title = "{DAIC}-{WOZ}: On the Validity of Using the Therapist`s prompts in Automatic Depression Detection from Clinical Interviews",
+    author = "Burdisso, Sergio  and
+      Reyes-Ram{\'i}rez, Ernesto  and
+      Villatoro-tello, Esa{\'u}  and
+      S{\'a}nchez-Vega, Fernando  and
+      Lopez Monroy, Adrian  and
+      Motlicek, Petr",
+    booktitle = "Proceedings of the 6th Clinical Natural Language Processing Workshop",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.clinicalnlp-1.8/",
+    doi = "10.18653/v1/2024.clinicalnlp-1.8",
+    pages = "82--90"
 }
 ```
 
