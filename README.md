@@ -6,7 +6,7 @@
 
 ###### Paper accepted at [INTERSPEECH 2023 Conference](https://interspeech2023.org/) ([ARXIV Version](https://arxiv.org/abs/2307.00920)).
 
-_( :point_right: You might also be interested in [our more recent work](https://github.com/idiap/bias_in_daic-woz), published at NAACL 2024.)_
+_( :point_right: You might also be interested in [our more recent work](https://github.com/idiap/bias_in_daic-woz), presented at NAACL 2024.)_
 
 ## Abstract
 
